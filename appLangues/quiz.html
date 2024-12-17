@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  class="quiz-page">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
     <link rel="stylesheet" href="style.css">
-
+    <title>Quiz</title>
 </head>
 
 <body>
+ 
     <header>
         <!-- DEBUT NAVBAR -->
         <nav class="container-nav-bar">
@@ -26,53 +26,53 @@
 
         <!-- FIN NAVBAR -->
     </header>
+    <h1 class="title">Portugais</h1>
+    <h2 class="quiz-level-subtitle">Niveau 1</h2>
+    <p></p>
+    <main class="quiz-main">
 
-    <main>
-        <form action="informations" method="get" class="form-section nunito">
-            <fieldset class="form-contour" id="contour">
-                <legend class="title">Inscription</legend>
-                <section class="inputs-fields">
-                    <div class="input-element">
 
-                        <label for="prenom">Prénom</label>
-                        <input type="text" id="prenom" placeholder="Prénom" required>
+        <!-- DIV pour afficher le conteneur avec le bouton de démarrage du quiz -->
+        <div id="welcomeScreen" class="welcome-screen">
+            <h2 class="quiz-title nunito">Boa sorte!</h2>
 
-                    </div>
-
-                    <div class="input-element">
-                        <label for="email">Votre email</label>
-                        <input type="email" id="email" placeholder="e-mail" required>
-
-                    </div>
-
-                    <div class="input-element">
-                        <label for="motDePasse">Mot de passe</label>
-                        <input type="password" id="motDePasse" placeholder="******">
-
-                    </div>
-                    <div class="input-element">
-                        <label for="repetermotDePasse">Répétez votre mot de passe</label>
-                        <input type="password" id="repetermotDePasse" placeholder="******">
-                    </div>
-                </section>
-                <input type="checkbox" name="CGU" id="CGU"> <label for="conditions">J'accepte les conditions d'utilisation.</label><br><br><br><br>
-                <button id="btnInscription" class="btn-inscription nunito">S'inscrire</button>
+            <p class="quiz-description"></p>
+            <div id="quizQuestions"></div>
+            <button id="quizBtn" class="quiz-btn">commencer</button>
+        </div>
 
 
 
-            </fieldset>
+<!-- DIV pour afficher les questions -->
+        <div id="questionsScreen" class="questions-screen">
 
 
+        </div>
+
+<!-- DIV pour le résultat -->
+        <div id="resultScreen" class="result-screen">
+            <h2 class="quiz-subtitle">Résultat</h2>
+            <p class="quiz-description">
+                <!-- <span id="nbCorrectes"></span> réponses sur 3 correctes -->
+
+            </p>
 
 
-
-
-
+        </div>
+        <div id="progressContainer" class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+            
+        </div>
+        <div class="walking-turtle">
+            <img src="./img/tortue-arrivee.png" width="15%" alt="">
+          </div>
+        
+          
     </main>
 
 
 
-    <footer class="container-nav-bar">
+    <footer class="container-nav-bar"> 
 
         <div class="social-icons">
             <img src="./img/icons8-facebook-f-50.png" alt="icone facebook" class="social">
@@ -88,7 +88,10 @@
 
         </div>
     </footer>
-    <script src="script.js"></script>
+
+
+    <script src="quiz.js"></script>
+
 </body>
 
 </html>

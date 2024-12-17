@@ -1,90 +1,412 @@
 /* Polices LATO - google fonts */
 .lato-thin {
-    font-family: "Lato", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .lato-light {
-    font-family: "Lato", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .lato-regular {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .lato-bold {
-    font-family: "Lato", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .lato-black {
-    font-family: "Lato", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .lato-thin-italic {
-    font-family: "Lato", serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .lato-light-italic {
-    font-family: "Lato", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .lato-regular-italic {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .lato-bold-italic {
-    font-family: "Lato", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .lato-black-italic {
-    font-family: "Lato", serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  /* FIN polices google fonts */
-
-body{
-background-color: #000080;
-font-family: "Lato", serif;
-font-weight: 400;
-font-style: normal; 
-
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-h1, h2, h3, ul, p {
-  color: rgb(225, 224, 224);
+.nunito {
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
 }
+/* FIN polices google fonts */
+
+body {
+  background-color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  background: -webkit-linear-gradient(#000080, #000000);
+}
+
+/* titres et textes */
+
+a,
+ul,
+p,
+span {
+  font-family: "Lato", serif;
+  color: rgb(230, 230, 230);
+}
+
+.title,
+h2,
+h3 {
+  font-family: "Nunito", sans-serif;
+  text-shadow: 1px 1px 1px #ffffff, 0 0 1em #3636ff, 0 0 0.2em blue;
+  text-align: center;
+  background: -webkit-linear-gradient(#6565f4, #98fb98);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flag-title {
+  color: rgb(230, 230, 230);
+  font-family: "Nunito";
+  margin: -30px;
+  margin-bottom: 30px;
+}
+
+/* Classe pour justifier le texte sans formatation */
+.justify-text {
+  text-align: justify;
+  margin: 15px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  line-height: 1.3;
+}
+
+/* LES BOUTONS */
+
+.btn-demarrer,
+.quiz-logo-btn,
+.quiz-btn,
+.btn-inscription {
+  width: 80%;
+  padding: 5px 10px;
+  color: #e0e0e0;
+  border-radius: 4px;
+  background-color: #07ff07;
+  background-image: linear-gradient(#98fb98, #03fa03 50%, transparent 50%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 1px 1px rgba(255, 255, 255, 0.3) inset,
+    0 1px rgba(255, 255, 255, 0.4) inset;
+  border: 1px solid black;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  outline: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.btn-demarrer:hover,
+.quiz-logo-btn:hover,
+.quiz-logo-btn:focus,
+.btn-inscription:hover,
+.btn-demarrer:focus,
+.quiz-btn:hover,
+.quiz-btn:focus,
+.btn-inscription:focus {
+  color: white;
+  background-color: #56fa56;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 1px 1px rgba(255, 255, 255, 0.3) inset,
+    0 1px rgba(255, 255, 255, 0.4) inset, 0 0 5px rgba(152, 251, 152, 1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* FIN BOUTONS */
+
 /* DEBUT NAVBAR */
-/* conteneur navbar */
-.container-nav-bar{
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 3%;
-    background-color: rgb(255, 255, 255);
+
+/* conteneur navbar / footer */
+
+.logo-img {
+  width: 15%;
+  height: 15%;
+  margin: auto;
+}
+
+.container-nav-bar,
+.container-footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.964);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.562);
+  margin: 20px;
+}
+
+.applangue {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.navbar-links {
+  /* border: 1px, solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.nav-link {
+  /* border: 1px, solid; */
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 2px;
+  font-size: 1em;
+  background-color: #000080;
+  border-radius: 5px;
+  color: rgb(243, 242, 242);
+  padding: 5px;
+}
+
+/* EXCLU FOOTER */
+
+.applangues-footer {
+  width: 30%;
+  height: 30%;
+  padding: 10px;
+  margin: auto;
+}
+.social-icons {
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+/* FIN NAVBAR / FOOFter*/
+
+/* DEBUT PAGE ACCUEIL */
+.race-img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  /* box-shadow: 2px 2px 8px whitesmoke; */
+}
+
+.block-choisis,
+.block-pratiques,
+.block-valides {
+  text-align: center;
+  margin: 15px;
+  border: 1px solid #010101;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #000052;
+}
+
+/* DEBUT PAGE QUIZ */
+
+.quiz-main,
+.quiz-level-subtitle {
+  background-color: #000080;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin: auto;
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+  max-width: 500px;
+}
+.quiz-main {
+  height: 400px;
+}
+
+.answer {
+  border: 3px solid black;
+  background-color: whitesmoke;
+  color: rgb(20, 13, 13);
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.questions-answers {
+  list-style-type: none;
+  padding: 0%;
+}
+
+.answer-correct {
+  background-color: #4caf50; /* Vert plus doux */
+  color: #fff; /* Contraste élevé */
+}
+
+.answer-wrong {
+  background-color: #f44336; /* Rouge plus doux */
+  color: #fff; /* Contraste élevé */
+}
+
+.questions-screen {
+  display: none;
+}
+.result-screen {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* DEBUT BARRE DE PROGRESSION */
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  background-image: url();
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #76c7c0;
+  transition: width 0.5s ease;
+}
+.walking-turtle {
+  /* font-size: 40px; */
+  animation: walk 400s linear infinite;
+  position: relative;
+}
+
+@keyframes walk {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(400px);
+  }
+}
+
+/* DEBUT LESSONS */
+
+.lesson1 {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #000080;
+  margin: 20px;
+  width: auto;
+  height: 600px;
+  overflow: auto;
+}
+.media {
+  width: 90%;
+  box-shadow: #d7ffd7 2px 2px 2px;
+  margin: 10px;
+}
+.cards-lessons {
+  border-radius: 15px;
+  padding: 1px;
+  background-color: #000080;
+  margin: 20px;
+}
+
+/* DEBUT FLAG CARDS */
+
+#sP {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#sPContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sPContentCardImg:hover {
+  border-radius: 10px;
+  box-shadow: -5px 5px 15px rgb(122, 122, 122);
+  border: 5px solid white;
+}
+
+#sPContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sPContentCardImg {
+  width: 60%;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  margin: 30px;
+}
+
+.cards-lessons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  gap: 20px; /* Espacement entre les cartes */
+  padding: 20px;
+}
+.card-lesson {
+  text-align: center;
+  overflow: hidden; /* Pour éviter les débordements si l'image est plus grande */
+}
+.cardImg {
+  width: 100%; /* L'image prend toute la largeur du conteneur */
+  height: auto; /* Garde le ratio de l'image */
+}
+
+/* DEBUT FORMULAIRE */
+
+.form-section {
+  color: whitesmoke;
+  margin: 20px;
+}
+.form-contour {
+  height: 700px;
+  margin: 50px;
+}
+
+.inputs-fields {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 400px;
+}
+.input-element {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.input-element label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1080px) {
+  .sPContentCard {
+    width: 44%;
+  }
+
+  .sCContainer {
     display: flex;
     flex-wrap: wrap;
   }
-
-  .applangue{
-    width: 40%;
-    height: 40%;
+  .cSCompetence {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
   }
 
-/* FIN NAVBAR */
+  .sCContainer img,
+  .cSCompetenceH3 {
+    width: 50%;
+  }
+}
+body {
+  font-size: 1rem; /* Taille par défaut */
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.5rem;
+  }
+}

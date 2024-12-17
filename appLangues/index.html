@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    <link rel="shortcut icon" href="./img/Stones-Langue-logo(1).png" type="image/x-icon">
     <link rel="stylesheet" href="style.css"> <!-- Liason avec le fichier CSS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet"><!-- lien pour Google fonts: importation de police(Lato) -->
 
 </head>
@@ -20,71 +21,122 @@
         <!-- DEBUT NAVBAR -->
         <nav class="container-nav-bar">
 
-            <img id="logo" src="./img/Stones-Langue-logo(1).png" width="30px"> <!-- Logo -->
+            <img class="logo-img" id="logo" src="./img/Stones-Langue-logo(1).png"
+                alt="Logo du site: dessin de bouche qui tire la langue, copie du logo de du groupe Rolling Stones mais en vert. ">
+            <!-- Logo -->
             <img class="applangue" src="https://fontmeme.com/permalink/241211/ec39b9276f4b5b1d4580e6683268506a.png"
                 alt="police-rolling-stone">
-            <div class="liens-navbar">
-                <a href="#">Accueil</a>
-                <a href="#">Inscription</a>
-                <a href="#">Cours</a>
+            <div class="navbar-links">
+                <a class="nav-link" href="./index.html">Accueil</a>
+                <a class="nav-link" href="./inscription.html">Inscription</a>
+                <a class="nav-link" href="./cours.html">Cours</a>
             </div>
         </nav>
 
         <!-- FIN NAVBAR -->
     </header>
-    <h1 id="title">Apprennez à votre rythme</h1>
-    <img src="./img/lievre.jpg" alt="image de la course entre le lièvre et la tortue">
+    <h1 class="title">Apprennez à votre rythme</h1>
     <main>
-        <h2>Trois étapes pour apprendre</h2>
 
-        <h3>Tu choisis</h3>
+        <img class="race-img" src="./img/Lievre-et-Tortue-1200x675.png"
+            alt="image de la course entre le lièvre et la tortue">
+        <h2 class=title>Trois étapes pour y arriver</h2>
+        <section class="block-choisis">
+            <h3 class="h3">Tu choisis</h3>
 
-        <ul>
-            <li>Anglais</li>
-            <li>Allemand</li>
-            <li>Espagnol</li>
-            <li>Italien</li>
-            <li>Portugais</li>
-            <li>Français</li>
+            <section>
 
-        </ul>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, a, cum tenetur ratione culpa architecto
-            molestias tempora odio, error sit nihil voluptates doloribus dolor ipsum dignissimos repellat ipsa minima
-            vel.</p>
 
-        <h3 class="h3">Tu pratiques</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, a, cum tenetur ratione culpa architecto
-            molestias tempora odio, error sit nihil voluptates doloribus dolor ipsum dignissimos repellat ipsa minima
-            vel.</p>
+                <div id="sPContent">
 
-        <img src="./img/tortue-arrivee.png" width="30%" alt="">
+                    <article class="sPContentCard">
+                        
+                        <img class="sPContentCardImg" src="./img/icons8-etats-unis-100.png" alt="Photo de ">
+                        <h4 class="flag-title">Anglais</h4 >
+                    </article>
+                    <article class="sPContentCard">
+                       
+                        <img class="sPContentCardImg" src="./img/icons8-espagne-100.png" alt="Photo de ">
+                         <h4 class="flag-title">Espagnol</h4 >
+                    </article>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, a, cum tenetur ratione culpa architecto
-            molestias tempora odio, error sit nihil voluptates doloribus dolor ipsum dignissimos repellat ipsa minima
-            vel.</p>
+                    <article class="sPContentCard  ">
+                        <img class="sPContentCardImg" src="./img/icons8-italie-100.png" alt="Photo de ">
+                        <h4 class="flag-title">Italien</h4 >
+                    </article>
 
-        <h3>Tu valides</h3>
+                    <article class="sPContentCard">
+                        <img class="sPContentCardImg" src="./img/icons8-allemagne-100.png" alt="Photo de ">
+                        <h4 class="flag-title">Allemand</h4 >
+                    </article>
+                    <article class="sPContentCard  ">
+                        <img class="sPContentCardImg" src="./img/icons8-brésil-100.png" alt="Photo de ">
+                        <h4 class="flag-title">Portugais</h4 >
+                    </article>
 
-        <img src="./img/cartoon-doodle-font-quiz-png.png" width="30%"
-            alt="image illustrative pour le quiz: une bulle style BD">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, a, cum tenetur ratione culpa architecto
-            molestias tempora odio, error sit nihil voluptates doloribus dolor ipsum dignissimos repellat ipsa minima
-            vel.</p>
+                    <article class="sPContentCard  ">
+                        <img class="sPContentCardImg" src="./img/icons8-la-france-100.png" alt="Photo de ">
+                        <h4 class="flag-title">Français</h4 >
+                    </article>
+                    </div>
+            </section>
 
-        <button class="btn-demarrer" id="btnDemarrer">Demarrer maintenant!</button>
 
+            <p class="justify-text">Vous avez peut-être déjà entendu parler de la loi de Pareto ou de la loi des 80-20 ?
+                Il s’agit d’une
+                formule qui signifie qu’environ 20% des actions produisent naturellement 80% des résultats !</p>
+        </section>
+
+        <section class="block-pratiques">
+            <h3 class="h3">Tu pratiques</h3>
+            <p class="justify-text">Pour apprendre une langue rapidement, il faut commencer par apprendre le vocabulaire
+                dont vous vous
+                servirez le plus couramment.</p>
+
+            <img src="./img/tortue-arrivee.png" width="30%" alt="">
+
+
+
+
+            <p class="justify-text">Vous avez appris les bases d’une langue, mais la maîtrise naît de la répétition.
+                C’est un principe connu
+                dans le fonctionnement de la mémoire : sans la révision vous risquez de perdre vos acquis. Heureusement,
+                il est possible de réviser et de solidifier ses connaissances dans l’apprentissage d’une langue par des
+                méthodes ludiques comme le quiz!</p>
+        </section>
+        <section class="block-valides">
+            <h3>Tu valides</h3>
+
+            <img src="./img/cartoon-doodle-font-quiz-png.png" width="40%"
+                alt="image illustrative pour le quiz: une bulle style BD">
+            <p>Un quiz par jour est suffisant pour commencer à communiquer en quelques semaines! </p>
+
+            <a href="./quiz.html" class="btn-demarrer" id="btnDemarrer">Demarrer maintenant!</a>
+        </section>
 
 
     </main>
 
 
 
-    <footer>
+    <footer class="container-footer">
 
+        <div class="social-icons">
+            <img src="./img/icons8-facebook-f-50.png" alt="icone facebook" class="social">
+            <img src="./img/icons8-youtube-32.png" alt="icone youtube" width="100%" class="social">
+            <img src="./img/icons8-tiktok-50.png" alt="icone tiktok" class="social">
+            <img src="./img/icons8-instagram-50.png" alt="icone instagram" class="social">
+        </div>
+        <img class="applangues-footer" src="https://fontmeme.com/permalink/241211/ec39b9276f4b5b1d4580e6683268506a.png"
+            alt="police-rolling-stone">
+        <div class="navbar-links">
+            <a class="nav-link" href="./quiz.html">Qui sommes nous</a>
+            <a class="nav-link" href="#">Contact</a>
 
+        </div>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -2,68 +2,140 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet"><!-- lien pour Google fonts: importation de police(Lato) -->
+
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <header></header>
-    <h1>Portugais</h1>
+  <header>
+    <!-- DEBUT NAVBAR -->
+    <nav class="container-nav-bar">
 
-    <main>
+      <img class="logo-img" id="logo" src="./img/Stones-Langue-logo(1).png"> <!-- Logo -->
+      <img class="applangue" src="https://fontmeme.com/permalink/241211/ec39b9276f4b5b1d4580e6683268506a.png"
+        alt="police-rolling-stone">
+      <div class="navbar-links">
+        <a class="nav-link" href="./index.html">Accueil</a>
+        <a class="nav-link" href="./inscription.html">Inscription</a>
+        <a class="nav-link" href="./cours.html">Cours</a>
+      </div>
+    </nav>
 
-        <section>
-            <h2>1 • um [õũ]
-                Primeira aula [priméira aola]</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Na rua
-                1 – Bom dia.
-                2 Por favor, o senhor sabe o nome desta rua?
-                3 – Esta é a Avenida Paulista.
-                4 A senhora é 1 estrangeira 2?
-                5 – Sim. Eu sou 3 italiana. </p>
-        </section>
-
-
-        <section class="cards-lessons" id="cardsLessons">
-            <div>
-                <ul>
-
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-
-            </div>
-
-        </section>
+    <!-- FIN NAVBAR -->
+  </header>
+  <h1 class="title">Portugais</h1>
 
 
+  <main>
+<!-- DEBUT LESSON avec scroll -->
+    <section class="lesson1">
+      <h2>1 • um [õũ]
+        Primeira aula [priméira aola]</h2>
 
-
+      <h3> Na rua</h3>
+      <ul>
+        <li>Bom dia.</li>
+        <li>Por favor, o senhor sabe o nome dessa rua?</li>
+        <li>Esta é a avenida Paulista</li>
+        <li>A senhora é estrangeira</li>
+        <li>Sim. Eu sou italiana</li>
+      </ul>
+      <p></p>
 
 
 
+      <div class="explication">
+        <span class="nunito">Prononciation</span>
+        <p>na Roua 1 bõ djiya 2 pouR favoR ou ssignoR ssabi ou nómi
+          dèssta Roua 3 èssta è a avénida paolissta 4 a ssignóra è
+          isstrãjéira 5 ssĩ. éo sso italyana</p>
+      </div>
 
-<button class="quiz-logo" id="quizLogo">QUIZ</button>
+      <img class="media" src="./img/lesson-ex.png" alt="Leçon numero 2: portugais">
+
+      <h2 class="nunito">Aula 2</h2>
+
+      <iframe class="media" width="560" height="315" src="https://www.youtube.com/embed/ow_qFrfagcY?si=02sJoI9MGmNsbAER"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <h3 class="nunito">E-Book disponible</h3>
+
+      <img class="media" src="./img/livro.png" alt="Image du livre version e-book 'Portugues para iniciantes '">
+
+    </section>
 
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+    <h2 id="sPTitle" class="nunito">Lessons suivantes</h2>
+    <section class="cards-lessons" id="cardsLessons">
+      <!-- <div id="cardsLessons" class="cards-lessons"> -->
+      <article class="card-lesson">
+        <img class="cardImg" src="./img/card-exo.jpg" alt="Image de lesson en format de carte " >
 
-    </main>
+      </article>
+      <article class="card-lesson">
+        <img class="cardImg" src="./img/card-cond.jpg" alt="Image de lesson en format de carte ">
+
+      </article>
+
+
+
+      <article class="card-lesson">
+        <img class="cardImg" src="./img/card-vocab.jpg" alt="Image de lesson en format de carte " >
+
+      </article>
+
+      <article class="card-lesson">
+        <img class="cardImg" src="./img/card-prononc.jpg" alt="Image de lesson en format de carte ">
+
+      </article>
+
+      <!-- </div> -->
+
+    </section>
 
 
 
 
+    <p style="text-align: center;">Si tu es prêt ou prête, commence le quiz! </p>
 
 
-    <footer></footer>
-    <script src="script.js"></script>
+
+
+    <a href="./quiz.html" style="text-align: center" class="quiz-logo-btn" id="quizLogo">DEMARRER LE QUIZ</a>
+
+
+
+
+  </main>
+
+  <footer class="container-footer">
+
+    <div class="social-icons">
+      <img src="./img/icons8-facebook-f-50.png" alt="icone facebook" class="social">
+      <img src="./img/icons8-youtube-32.png" alt="icone youtube" width="100%" class="social">
+      <img src="./img/icons8-tiktok-50.png" alt="icone tiktok" class="social">
+      <img src="./img/icons8-instagram-50.png" alt="icone instagram" class="social">
+    </div>
+    <img class="applangues-footer" src="https://fontmeme.com/permalink/241211/ec39b9276f4b5b1d4580e6683268506a.png"
+      alt="police-rolling-stone">
+    <div class="navbar-links">
+      <a class="nav-link" href="./quiz.html">Qui sommes nous</a>
+      <a class="nav-link" href="#">Contact</a>
+
+    </div>
+  </footer>
+
 </body>
 
 </html>
